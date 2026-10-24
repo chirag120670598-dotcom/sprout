@@ -574,9 +574,11 @@ class TestWorldLadder(unittest.TestCase):
 
     def spec(self, depth=2):
         from sprout.world import EngineSpec
+        # An absolute path: a relative one depends on the working directory a
+        # test runner happens to choose, which differs between CI and a laptop.
+        script = str(ROOT / "tools" / "engines" / "slowhand.py")
         return EngineSpec(name=f"slowhand-{depth}",
-                          command=["{python}", "tools/engines/slowhand.py",
-                                   "--depth", str(depth)],
+                          command=["{python}", script, "--depth", str(depth)],
                           source="bundled", revision="bundled", added="2026-10-24")
 
     def test_python_placeholder_is_replaced(self):

@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "name": "sprout",
+  "level": 4,
+  "genome": {
+    "program": "(mul (sub mob my3) (mul centre one))",
+    "weights": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "depth": 3,
+    "sigma": 0.5011,
+    "population": 22,
+    "margin": 0.0678
+  },
+  "exam": {
+    "score": 0.2847222222222222,
+    "wins": 17,
+    "draws": 7,
+    "losses": 48,
+    "games": 72,
+    "seed": 104729,
+    "opponents": [
+      "hand-2",
+      "hand-3",
+      "hand-4"
+    ],
+    "sanity": {
+      "random": 1.0,
+      "first": 1.0,
+      "centre": 1.0
+    }
+  },
+  "record": 0.2847222222222222,
+  "style": 38.0,
+  "peak": {
+    "exam": 0.2847222222222222,
+    "at_level": 4
+  },
+  "generations": 10,
+  "accepted": 3,
+  "rejected": 7,
+  "stall": 6,
+  "born": "2026-10-24T16:44:49Z",
+  "updated": "2026-10-24T16:47:14Z",
+  "history": [
+    {
+      "level": 1,
+      "exam": 0.0278,
+      "style": 32.1,
+      "generation": 0,
+      "opponents": [
+        "hand-2",
+        "hand-3",
+        "hand-4"
+      ]
+    },
+    {
+      "level": 2,
+      "exam": 0.1389,
+      "style": 48.7,
+      "generation": 1,
+      "opponents": [
+        "hand-2",
+        "hand-3",
+        "hand-4"
+      ]
+    },
+    {
+      "level": 3,
+      "exam": 0.1944,
+      "style": 51.1,
+      "generation": 3,
+      "opponents": [
+        "hand-2",
+        "hand-3",
+        "hand-4"
+      ]
+    },
+    {
+      "level": 4,
+      "exam": 0.2847,
+      "style": 38.0,
+      "generation": 4,
+      "opponents": [
+        "hand-2",
+        "hand-3",
+        "hand-4"
+      ]
+    }
+  ],
+  "memory": {
+    "positions": 40,
+    "games": 3,
+    "learned": 41
+  }
+}

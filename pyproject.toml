@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sprout"
+version = "1.0.0"
+description = "A program that improves itself against an exam it cannot cheat, and stops when it stops improving."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Chirag" }]
+keywords = ["self-improvement", "evolution", "connect-four", "alpha-beta", "read-only", "experiment"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Games/Entertainment :: Board Games",
+]
+dependencies = []
+
+[project.scripts]
+sprout = "sprout.cli:main"
+
+[project.urls]
+Homepage = "https://chirag120670598-dotcom.github.io/sprout/"
+Source = "https://github.com/chirag120670598-dotcom/sprout"
+
+[tool.setuptools]
+packages = ["sprout"]

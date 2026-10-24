@@ -1,0 +1,28 @@
+{
+  "level": 5,
+  "exam": 0.7917,
+  "engines": [
+    {
+      "name": "slowhand-4",
+      "wins": 1,
+      "draws": 0,
+      "losses": 1,
+      "crashes": 0,
+      "games": 2,
+      "score": 0.5,
+      "source": "bundled with this repository, written independently of sprout/",
+      "revision": "bundled"
+    },
+    {
+      "name": "slowhand-5",
+      "wins": 1,
+      "draws": 0,
+      "losses": 1,
+      "crashes": 0,
+      "games": 2,
+      "score": 0.5,
+      "source": "bundled with this repository, written independently of sprout/",
+      "revision": "bundled"
+    }
+  ]
+}

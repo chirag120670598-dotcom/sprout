@@ -1,0 +1,11 @@
+{"accepted": true, "child": 0.1389, "delta": 0.1111, "depth": 2, "escaping": false, "generation": 1, "level": 2, "population": 22, "record": 0.0278, "shortlist": 0.2917, "sigma": 0.4117, "ts": "2026-10-24T16:45:02Z"}
+{"accepted": false, "child": 0.1528, "delta": 0.0139, "depth": 2, "escaping": false, "generation": 2, "level": 2, "population": 22, "record": 0.1389, "shortlist": 0.3333, "sigma": 0.4117, "ts": "2026-10-24T16:45:14Z"}
+{"accepted": true, "child": 0.1944, "delta": 0.0556, "depth": 3, "escaping": false, "generation": 3, "level": 3, "population": 22, "record": 0.1389, "shortlist": 0.2917, "sigma": 0.4469, "ts": "2026-10-24T16:45:29Z"}
+{"accepted": true, "child": 0.2847, "delta": 0.0903, "depth": 3, "escaping": false, "generation": 4, "level": 4, "population": 22, "record": 0.1944, "shortlist": 0.625, "sigma": 0.5011, "ts": "2026-10-24T16:45:46Z"}
+{"accepted": false, "child": 0.2847, "delta": 0.0, "depth": 3, "escaping": false, "generation": 5, "level": 4, "population": 22, "record": 0.2847, "shortlist": 0.625, "sigma": 0.5011, "ts": "2026-10-24T16:46:00Z"}
+{"accepted": false, "child": 0.2847, "delta": 0.0, "depth": 3, "escaping": false, "generation": 6, "level": 4, "population": 22, "record": 0.2847, "shortlist": 0.625, "sigma": 0.5011, "ts": "2026-10-24T16:46:15Z"}
+{"accepted": false, "child": 0.2847, "delta": 0.0, "depth": 3, "escaping": false, "generation": 7, "level": 4, "population": 22, "record": 0.2847, "shortlist": 0.625, "sigma": 0.5011, "ts": "2026-10-24T16:46:28Z"}
+{"accepted": false, "child": 0.2847, "delta": 0.0, "depth": 3, "escaping": false, "generation": 8, "level": 4, "population": 22, "record": 0.2847, "shortlist": 0.625, "sigma": 0.5011, "ts": "2026-10-24T16:46:43Z"}
+{"accepted": false, "child": 0.1944, "delta": -0.0903, "depth": 3, "escaping": false, "generation": 9, "level": 4, "population": 22, "record": 0.2847, "shortlist": 0.3333, "sigma": 0.5011, "ts": "2026-10-24T16:46:58Z"}
+{"accepted": false, "child": 0.2847, "delta": 0.0, "depth": 3, "escaping": false, "generation": 10, "level": 4, "population": 22, "record": 0.2847, "shortlist": 0.625, "sigma": 0.5011, "ts": "2026-10-24T16:47:12Z"}
+{"booked": 41, "games": 4, "kind": "memory", "positions": 40, "ts": "2026-10-24T16:47:12Z"}

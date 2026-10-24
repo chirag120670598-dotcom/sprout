@@ -1,0 +1,348 @@
+{
+  "scouted": "2026-10-24",
+  "note": "Candidates only. Nothing here is on the ladder until a person reads it and adds it to board/ladder.json pinned to a commit.",
+  "repositories": [
+    {
+      "name": "ttsiodras/Score4",
+      "stars": 45,
+      "language": "F#",
+      "url": "https://github.com/ttsiodras/Score4",
+      "default_branch": "master",
+      "pushed": "2022-12-12",
+      "query": "connect-four ai"
+    },
+    {
+      "name": "markhliu/AlphaGoSimplified",
+      "stars": 42,
+      "language": "Jupyter Notebook",
+      "url": "https://github.com/markhliu/AlphaGoSimplified",
+      "default_branch": "main",
+      "pushed": "2024-05-13",
+      "query": "connect-four ai"
+    },
+    {
+      "name": "caleb531/connect-four",
+      "stars": 32,
+      "language": "JavaScript",
+      "url": "https://github.com/caleb531/connect-four",
+      "default_branch": "main",
+      "pushed": "2026-10-01",
+      "query": "connect-four ai"
+    },
+    {
+      "name": "BanhmiDev/connect-four-js",
+      "stars": 23,
+      "language": "JavaScript",
+      "url": "https://github.com/BanhmiDev/connect-four-js",
+      "default_branch": "master",
+      "pushed": "2015-09-15",
+      "query": "connect four alpha beta"
+    },
+    {
+      "name": "skeeto/connect4",
+      "stars": 21,
+      "language": "C",
+      "url": "https://github.com/skeeto/connect4",
+      "default_branch": "master",
+      "pushed": "2021-07-11",
+      "query": "connect4 engine"
+    },
+    {
+      "name": "GoodCoder666/katac4",
+      "stars": 18,
+      "language": "Python",
+      "url": "https://github.com/GoodCoder666/katac4",
+      "default_branch": "main",
+      "pushed": "2026-09-12",
+      "query": "connect4 engine"
+    },
+    {
+      "name": "danukarangith/Connect-4-Games",
+      "stars": 18,
+      "language": "Java",
+      "url": "https://github.com/danukarangith/Connect-4-Games",
+      "default_branch": "main",
+      "pushed": "2024-10-22",
+      "query": "connect-four ai"
+    },
+    {
+      "name": "IASIAI/gym-connect-four",
+      "stars": 17,
+      "language": "Python",
+      "url": "https://github.com/IASIAI/gym-connect-four",
+      "default_branch": "master",
+      "pushed": "2022-09-21",
+      "query": "connect-four ai"
+    },
+    {
+      "name": "benjaminrall/connect-four-ai",
+      "stars": 17,
+      "language": "Rust",
+      "url": "https://github.com/benjaminrall/connect-four-ai",
+      "default_branch": "main",
+      "pushed": "2025-09-21",
+      "query": "connect-four ai"
+    },
+    {
+      "name": "msaveski/connect-four",
+      "stars": 15,
+      "language": "Python",
+      "url": "https://github.com/msaveski/connect-four",
+      "default_branch": "master",
+      "pushed": "2013-12-30",
+      "query": "connect-four ai"
+    },
+    {
+      "name": "aalekhpatel07/minimax",
+      "stars": 15,
+      "language": "Rust",
+      "url": "https://github.com/aalekhpatel07/minimax",
+      "default_branch": "main",
+      "pushed": "2022-08-02",
+      "query": "connect four alpha beta"
+    },
+    {
+      "name": "zakuraevs/connect4-ai",
+      "stars": 13,
+      "language": "Python",
+      "url": "https://github.com/zakuraevs/connect4-ai",
+      "default_branch": "master",
+      "pushed": "2021-11-15",
+      "query": "connect4 minimax"
+    },
+    {
+      "name": "mennovanslooten/connect4",
+      "stars": 13,
+      "language": "JavaScript",
+      "url": "https://github.com/mennovanslooten/connect4",
+      "default_branch": "gh-pages",
+      "pushed": "2015-04-23",
+      "query": "connect four alpha beta"
+    },
+    {
+      "name": "psiorx/Reinforcement-Learning",
+      "stars": 11,
+      "language": "Python",
+      "url": "https://github.com/psiorx/Reinforcement-Learning",
+      "default_branch": "master",
+      "pushed": "2026-01-29",
+      "query": "connect4 minimax"
+    },
+    {
+      "name": "kupshah/Connect-Four",
+      "stars": 9,
+      "language": "Python",
+      "url": "https://github.com/kupshah/Connect-Four",
+      "default_branch": "master",
+      "pushed": "2018-03-08",
+      "query": "connect four alpha beta"
+    },
+    {
+      "name": "JonathanDeLeon/connect-four-ai",
+      "stars": 9,
+      "language": "Python",
+      "url": "https://github.com/JonathanDeLeon/connect-four-ai",
+      "default_branch": "master",
+      "pushed": "2018-06-08",
+      "query": "connect four alpha beta"
+    },
+    {
+      "name": "AbdallahReda/Connect4",
+      "stars": 7,
+      "language": "Python",
+      "url": "https://github.com/AbdallahReda/Connect4",
+      "default_branch": "master",
+      "pushed": "2019-05-15",
+      "query": "connect4 minimax"
+    },
+    {
+      "name": "mukeshmk/connect-4",
+      "stars": 6,
+      "language": "Python",
+      "url": "https://github.com/mukeshmk/connect-4",
+      "default_branch": "master",
+      "pushed": "2020-04-12",
+      "query": "connect4 minimax"
+    },
+    {
+      "name": "Wowol/Connect4-AI",
+      "stars": 6,
+      "language": "Python",
+      "url": "https://github.com/Wowol/Connect4-AI",
+      "default_branch": "master",
+      "pushed": "2019-05-26",
+      "query": "connect4 minimax"
+    },
+    {
+      "name": "stratzilla/connect-four",
+      "stars": 6,
+      "language": "C++",
+      "url": "https://github.com/stratzilla/connect-four",
+      "default_branch": "master",
+      "pushed": "2021-12-02",
+      "query": "connect four alpha beta"
+    },
+    {
+      "name": "ernestoyaquello/TwoPlayerZeroSumGameEngine",
+      "stars": 5,
+      "language": "C#",
+      "url": "https://github.com/ernestoyaquello/TwoPlayerZeroSumGameEngine",
+      "default_branch": "master",
+      "pushed": "2020-12-09",
+      "query": "connect4 engine"
+    },
+    {
+      "name": "yycho0108/Connect4_AI",
+      "stars": 5,
+      "language": "C++",
+      "url": "https://github.com/yycho0108/Connect4_AI",
+      "default_branch": "master",
+      "pushed": "2016-04-18",
+      "query": "connect4 minimax"
+    },
+    {
+      "name": "AMRYB/An-Intelligent-Connect-Four-Player",
+      "stars": 5,
+      "language": "Python",
+      "url": "https://github.com/AMRYB/An-Intelligent-Connect-Four-Player",
+      "default_branch": "main",
+      "pushed": "2026-02-02",
+      "query": "connect four alpha beta"
+    },
+    {
+      "name": "giTonyx/connect-four-rust",
+      "stars": 4,
+      "language": "Rust",
+      "url": "https://github.com/giTonyx/connect-four-rust",
+      "default_branch": "master",
+      "pushed": "2019-11-26",
+      "query": "connect4 minimax"
+    },
+    {
+      "name": "Matt-Jennings-GitHub/ConnectFour-ComputerVisionAI",
+      "stars": 4,
+      "language": "Python",
+      "url": "https://github.com/Matt-Jennings-GitHub/ConnectFour-ComputerVisionAI",
+      "default_branch": "master",
+      "pushed": "2020-06-18",
+      "query": "connect four alpha beta"
+    },
+    {
+      "name": "snowdrop4/spooky-connect4",
+      "stars": 3,
+      "language": "Rust",
+      "url": "https://github.com/snowdrop4/spooky-connect4",
+      "default_branch": "master",
+      "pushed": "2026-10-16",
+      "query": "connect4 engine"
+    },
+    {
+      "name": "Vaibhav24422003/Connect4-Game-Development",
+      "stars": 3,
+      "language": null,
+      "url": "https://github.com/Vaibhav24422003/Connect4-Game-Development",
+      "default_branch": "main",
+      "pushed": "2024-08-08",
+      "query": "connect4 engine"
+    },
+    {
+      "name": "marcprogcode/connect4engine",
+      "stars": 2,
+      "language": "Python",
+      "url": "https://github.com/marcprogcode/connect4engine",
+      "default_branch": "master",
+      "pushed": "2026-03-09",
+      "query": "connect4 engine"
+    },
+    {
+      "name": "YoussefAboelwafa/Game-Engine-SCALA",
+      "stars": 1,
+      "language": "Scala",
+      "url": "https://github.com/YoussefAboelwafa/Game-Engine-SCALA",
+      "default_branch": "main",
+      "pushed": "2023-08-27",
+      "query": "connect4 engine"
+    },
+    {
+      "name": "NickDMansfield/connect4engine",
+      "stars": 1,
+      "language": "JavaScript",
+      "url": "https://github.com/NickDMansfield/connect4engine",
+      "default_branch": "master",
+      "pushed": "2022-05-01",
+      "query": "connect4 engine"
+    },
+    {
+      "name": "ecc521/connect-4-solver",
+      "stars": 1,
+      "language": "C++",
+      "url": "https://github.com/ecc521/connect-4-solver",
+      "default_branch": "main",
+      "pushed": "2026-07-27",
+      "query": "connect4 bitboard"
+    },
+    {
+      "name": "jpthanga/Connect4-agent",
+      "stars": 1,
+      "language": "Python",
+      "url": "https://github.com/jpthanga/Connect4-agent",
+      "default_branch": "master",
+      "pushed": "2017-10-06",
+      "query": "connect4 bitboard"
+    },
+    {
+      "name": "xL1miT3/Connect4-with-AI",
+      "stars": 1,
+      "language": "Python",
+      "url": "https://github.com/xL1miT3/Connect4-with-AI",
+      "default_branch": "main",
+      "pushed": "2023-06-22",
+      "query": "connect4 bitboard"
+    },
+    {
+      "name": "1liale/connect4-bitboard",
+      "stars": 0,
+      "language": "C++",
+      "url": "https://github.com/1liale/connect4-bitboard",
+      "default_branch": "main",
+      "pushed": "2022-11-25",
+      "query": "connect4 bitboard"
+    },
+    {
+      "name": "leesongun/connect4-bitboard",
+      "stars": 0,
+      "language": "Python",
+      "url": "https://github.com/leesongun/connect4-bitboard",
+      "default_branch": "master",
+      "pushed": "2026-06-17",
+      "query": "connect4 bitboard"
+    },
+    {
+      "name": "Taka1304/connect4-bitboard",
+      "stars": 0,
+      "language": "Rust",
+      "url": "https://github.com/Taka1304/connect4-bitboard",
+      "default_branch": "main",
+      "pushed": "2024-06-11",
+      "query": "connect4 bitboard"
+    },
+    {
+      "name": "maxwellbsutherland/bitboard-connect4-mcts",
+      "stars": 0,
+      "language": "C",
+      "url": "https://github.com/maxwellbsutherland/bitboard-connect4-mcts",
+      "default_branch": "main",
+      "pushed": "2026-03-10",
+      "query": "connect4 bitboard"
+    },
+    {
+      "name": "thomasmoenconsulting/connect4",
+      "stars": 0,
+      "language": "C++",
+      "url": "https://github.com/thomasmoenconsulting/connect4",
+      "default_branch": "main",
+      "pushed": "2026-10-19",
+      "query": "connect4 bitboard"
+    }
+  ]
+}

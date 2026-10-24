@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "note": "Opponents from outside this repository. Pinned on purpose: a ladder entry that can change underneath a score is not a rung.",
+  "engines": [
+    {
+      "name": "slowhand-4",
+      "command": ["{python}", "tools/engines/slowhand.py", "--depth", "4"],
+      "source": "bundled with this repository, written independently of sprout/",
+      "revision": "bundled",
+      "added": "2026-10-24"
+    },
+    {
+      "name": "slowhand-5",
+      "command": ["{python}", "tools/engines/slowhand.py", "--depth", "5"],
+      "source": "bundled with this repository, written independently of sprout/",
+      "revision": "bundled",
+      "added": "2026-10-24"
+    }
+  ]
+}

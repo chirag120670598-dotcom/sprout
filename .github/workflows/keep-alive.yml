@@ -1,0 +1,73 @@
+name: keep alive
+
+# The organism does not stop because the job ended. Each run loads the
+# checkpoint the last one saved, evolves, writes the result back, and exits.
+# Six hours later the next one picks it up from exactly there.
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+    inputs:
+      iterations:
+        description: "generations per cycle"
+        default: "24"
+      cycles:
+        description: "cycles per run"
+        default: "8"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: sprout
+  cancel-in-progress: false
+
+jobs:
+  grow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Sit the exam, over and over
+        env:
+          ITERATIONS: ${{ github.event.inputs.iterations || '24' }}
+          CYCLES: ${{ github.event.inputs.cycles || '8' }}
+        run: |
+          python -m sprout run --iterations "$ITERATIONS" --cycles "$CYCLES" --pause 240
+
+      - name: Draw the page from the organism's own record
+        run: python tools/build_site.py
+
+      - name: Refuse to publish a page that disagrees with the record
+        run: python tools/check_site.py
+
+      - name: Save the organism's work
+        run: |
+          git config user.name "sprout[bot]"
+          git config user.email "sprout@users.noreply.github.com"
+          git add board site
+          if git diff --cached --quiet; then
+            echo "nothing changed this run"
+            exit 0
+          fi
+          SUMMARY=$(python -c "import json;s=json.load(open('board/state.json'));print(f\"level {s['level']} · exam {s['record']:.3f} · gen {s['generations']}\")")
+          git commit -m "🌱 $SUMMARY"
+          git push
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deploy
+        uses: actions/deploy-pages@v4

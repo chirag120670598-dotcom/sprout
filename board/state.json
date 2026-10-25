@@ -1,9 +1,9 @@
 {
   "version": 1,
   "name": "sprout",
-  "level": 7,
+  "level": 10,
   "genome": {
-    "program": "(sub (mul 0.888 my1) op2)",
+    "program": "(sub (mul 0.888 (add (sub my1 op3) mob)) op2)",
     "weights": [
       0.0,
       0.0,
@@ -12,15 +12,15 @@
       0.0
     ],
     "depth": 3,
-    "sigma": 0.596,
+    "sigma": 0.9106,
     "population": 22,
-    "margin": 0.0524
+    "margin": 0.0377
   },
   "exam": {
-    "score": 0.5277777777777778,
-    "wins": 36,
-    "draws": 4,
-    "losses": 32,
+    "score": 0.6944444444444444,
+    "wins": 50,
+    "draws": 0,
+    "losses": 22,
     "games": 72,
     "seed": 104729,
     "opponents": [
@@ -34,18 +34,18 @@
       "centre": 1.0
     }
   },
-  "record": 0.5277777777777778,
-  "style": 91.3,
+  "record": 0.6944444444444444,
+  "style": 100.0,
   "peak": {
-    "exam": 0.5277777777777778,
-    "at_level": 7
+    "exam": 0.6944444444444444,
+    "at_level": 10
   },
-  "generations": 210,
-  "accepted": 6,
-  "rejected": 204,
-  "stall": 24,
+  "generations": 402,
+  "accepted": 9,
+  "rejected": 393,
+  "stall": 19,
   "born": "2026-10-24T16:44:49Z",
-  "updated": "2026-10-25T12:16:58Z",
+  "updated": "2026-10-25T16:37:33Z",
   "history": [
     {
       "level": 1,
@@ -123,11 +123,44 @@
         "hand-3",
         "hand-4"
       ]
+    },
+    {
+      "level": 8,
+      "exam": 0.5903,
+      "style": 92.5,
+      "generation": 353,
+      "opponents": [
+        "hand-2",
+        "hand-3",
+        "hand-4"
+      ]
+    },
+    {
+      "level": 9,
+      "exam": 0.6389,
+      "style": 100.0,
+      "generation": 359,
+      "opponents": [
+        "hand-2",
+        "hand-3",
+        "hand-4"
+      ]
+    },
+    {
+      "level": 10,
+      "exam": 0.6944,
+      "style": 100.0,
+      "generation": 383,
+      "opponents": [
+        "hand-2",
+        "hand-3",
+        "hand-4"
+      ]
     }
   ],
   "memory": {
-    "positions": 426,
-    "games": 49,
-    "learned": 501
+    "positions": 674,
+    "games": 81,
+    "learned": 913
   }
 }

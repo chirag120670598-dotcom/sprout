@@ -1,9 +1,9 @@
-Sprout (o) vs hand-3   ·   level 7
-  . . . . . . .
-  . . . . . . .
-  . . . . . . .
-  . . . . . . .
-  . . x x . . .
-  . o o o o . x
+Sprout (x) vs hand-3   ·   level 10
+  o x x x x x x
+  x o o x o o o
+  o x o o x x x
+  x o x x o o o
+  o x x o x x o
+  x o o o x o o
   0 1 2 3 4 5 6
-Sprout won in 7 moves.
+Sprout won in 42 moves.

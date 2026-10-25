@@ -619,6 +619,34 @@ class TestWorldLadder(unittest.TestCase):
         for spec in specs:
             self.assertTrue(spec.revision, spec.name)
 
+class TheWorkflowIsAllowedToRun(unittest.TestCase):
+    """A workflow that cannot start is the quietest possible bug.
+
+    `keep alive` failed twice, in seven seconds, having never once succeeded:
+    the workflow asked for a total pause eight times larger than the trainer
+    allows, and the trainer refuses rather than let GitHub kill a job halfway
+    through a cycle and lose the checkpoint. Nothing in the code was wrong.
+    The numbers in the YAML were. So the numbers are now a test.
+    """
+
+    def setUp(self):
+        import re
+        self.text = (ROOT / ".github" / "workflows" / "keep-alive.yml").read_text()
+        self.pause = int(re.search(r"--pause (\d+)", self.text).group(1))
+        self.cycles = int(
+            re.search(r"CYCLES:.*?\|\|\s*'(\d+)'", self.text).group(1))
+
+    def test_the_pause_fits_the_budget(self):
+        from sprout.trainer import MAX_PAUSE_SECONDS
+        total = self.pause * max(0, self.cycles - 1)
+        self.assertLessEqual(
+            total, MAX_PAUSE_SECONDS,
+            f"pause {self.pause}s x ({self.cycles} - 1) cycles = {total}s, "
+            f"budget is {MAX_PAUSE_SECONDS}s - the job would die before it starts")
+
+    def test_the_workflow_actually_invokes_the_trainer(self):
+        self.assertIn("python -m sprout run", self.text)
+
 
 if __name__ == "__main__":
     unittest.main()

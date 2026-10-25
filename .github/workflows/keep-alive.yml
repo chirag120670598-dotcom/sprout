@@ -44,7 +44,10 @@ jobs:
           ITERATIONS: ${{ github.event.inputs.iterations || '24' }}
           CYCLES: ${{ github.event.inputs.cycles || '8' }}
         run: |
-          python -m sprout run --iterations "$ITERATIONS" --cycles "$CYCLES" --pause 240
+          # The trainer refuses a total pause above 210s per job, because a job
+          # that GitHub kills mid-cycle loses the checkpoint the next run needs.
+          # pause x (cycles - 1) <= 210:  25 x 7 = 175.  tests check this line.
+          python -m sprout run --iterations "$ITERATIONS" --cycles "$CYCLES" --pause 25
 
       - name: Draw the page from the organism's own record
         run: python tools/build_site.py

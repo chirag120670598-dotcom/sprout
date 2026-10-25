@@ -46,6 +46,10 @@ LEDGER_FILE = "ledger.jsonl"
 BOARD_FILE = "live.board"
 MEMORY_FILE = "memory.json"
 
+# A single job is allowed this many seconds of total pause. The workflow is a
+# chain of jobs, so pacing belongs between runs, not inside one.
+MAX_PAUSE_SECONDS = 210
+
 
 def _now() -> str:
     return time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
@@ -318,8 +322,11 @@ def run(repo: Path, iterations: int = 12, cycles: int = 1, pause: float = 0.0,
 
     rng = random.Random(f"{state['generations']}:{time.time_ns()}")
     total_pause = pause * max(0, cycles - 1)
-    if pause and total_pause > 210:
-        raise SystemExit("pause is too long for one job; run more cycles instead")
+    if pause and total_pause > MAX_PAUSE_SECONDS:
+        raise SystemExit(
+            f"pause x (cycles - 1) = {total_pause}s, over the "
+            f"{MAX_PAUSE_SECONDS}s budget for one job; "
+            "shorten the pause or run more, shorter jobs instead")
 
     for cycle in range(cycles):
         accepted_this_cycle = False

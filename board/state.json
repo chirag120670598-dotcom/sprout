@@ -1,9 +1,9 @@
 {
   "version": 1,
   "name": "sprout",
-  "level": 4,
+  "level": 7,
   "genome": {
-    "program": "(mul (sub mob my3) (mul centre one))",
+    "program": "(sub (mul 0.888 my1) op2)",
     "weights": [
       0.0,
       0.0,
@@ -12,15 +12,15 @@
       0.0
     ],
     "depth": 3,
-    "sigma": 0.5011,
+    "sigma": 0.596,
     "population": 22,
-    "margin": 0.0678
+    "margin": 0.0524
   },
   "exam": {
-    "score": 0.2847222222222222,
-    "wins": 17,
-    "draws": 7,
-    "losses": 48,
+    "score": 0.5277777777777778,
+    "wins": 36,
+    "draws": 4,
+    "losses": 32,
     "games": 72,
     "seed": 104729,
     "opponents": [
@@ -29,23 +29,23 @@
       "hand-4"
     ],
     "sanity": {
-      "random": 1.0,
+      "random": 0.958,
       "first": 1.0,
       "centre": 1.0
     }
   },
-  "record": 0.2847222222222222,
-  "style": 38.0,
+  "record": 0.5277777777777778,
+  "style": 91.3,
   "peak": {
-    "exam": 0.2847222222222222,
-    "at_level": 4
+    "exam": 0.5277777777777778,
+    "at_level": 7
   },
-  "generations": 18,
-  "accepted": 3,
-  "rejected": 15,
-  "stall": 14,
+  "generations": 210,
+  "accepted": 6,
+  "rejected": 204,
+  "stall": 24,
   "born": "2026-10-24T16:44:49Z",
-  "updated": "2026-10-25T08:43:07Z",
+  "updated": "2026-10-25T12:16:58Z",
   "history": [
     {
       "level": 1,
@@ -90,11 +90,44 @@
         "hand-3",
         "hand-4"
       ]
+    },
+    {
+      "level": 5,
+      "exam": 0.375,
+      "style": 58.2,
+      "generation": 45,
+      "opponents": [
+        "hand-2",
+        "hand-3",
+        "hand-4"
+      ]
+    },
+    {
+      "level": 6,
+      "exam": 0.4583,
+      "style": 77.4,
+      "generation": 131,
+      "opponents": [
+        "hand-2",
+        "hand-3",
+        "hand-4"
+      ]
+    },
+    {
+      "level": 7,
+      "exam": 0.5278,
+      "style": 91.3,
+      "generation": 186,
+      "opponents": [
+        "hand-2",
+        "hand-3",
+        "hand-4"
+      ]
     }
   ],
   "memory": {
-    "positions": 174,
-    "games": 18,
-    "learned": 188
+    "positions": 426,
+    "games": 49,
+    "learned": 501
   }
 }

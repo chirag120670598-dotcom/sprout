@@ -637,12 +637,17 @@ class TheWorkflowIsAllowedToRun(unittest.TestCase):
             re.search(r"CYCLES:.*?\|\|\s*'(\d+)'", self.text).group(1))
 
     def test_the_pause_fits_the_budget(self):
-        from sprout.trainer import MAX_PAUSE_SECONDS
+        import re
+        # The budget is read out of the engine, not restated here. The engine is
+        # frozen on purpose (frozen.sha256) -- editing it to expose a constant
+        # is the one thing this repository will not do for a test's convenience.
+        engine = (ROOT / "sprout" / "trainer.py").read_text()
+        budget = int(re.search(r"total_pause > (\d+)", engine).group(1))
         total = self.pause * max(0, self.cycles - 1)
         self.assertLessEqual(
-            total, MAX_PAUSE_SECONDS,
+            total, budget,
             f"pause {self.pause}s x ({self.cycles} - 1) cycles = {total}s, "
-            f"budget is {MAX_PAUSE_SECONDS}s - the job would die before it starts")
+            f"budget is {budget}s - the job would die before it starts")
 
     def test_the_workflow_actually_invokes_the_trainer(self):
         self.assertIn("python -m sprout run", self.text)

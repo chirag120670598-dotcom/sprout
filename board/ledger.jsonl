@@ -15,3 +15,9 @@
 {"accepted": false, "child": 0.2847, "delta": 0.0, "depth": 3, "escaping": false, "generation": 13, "level": 4, "population": 22, "record": 0.2847, "shortlist": 0.4375, "sigma": 0.5011, "ts": "2026-10-25T08:39:49Z"}
 {"accepted": false, "child": 0.2847, "delta": 0.0, "depth": 3, "escaping": false, "generation": 14, "level": 4, "population": 22, "record": 0.2847, "shortlist": 0.4375, "sigma": 0.5011, "ts": "2026-10-25T08:40:12Z"}
 {"booked": 51, "games": 4, "kind": "memory", "positions": 94, "ts": "2026-10-25T08:40:12Z"}
+{"accepted": false, "child": 0.2847, "delta": 0.0, "depth": 3, "escaping": false, "generation": 15, "level": 4, "population": 22, "record": 0.2847, "shortlist": 0.4375, "sigma": 0.5011, "ts": "2026-10-25T08:41:57Z"}
+{"accepted": false, "child": 0.2847, "delta": 0.0, "depth": 3, "escaping": false, "generation": 16, "level": 4, "population": 22, "record": 0.2847, "shortlist": 0.4375, "sigma": 0.5011, "ts": "2026-10-25T08:42:12Z"}
+{"booked": 56, "games": 4, "kind": "memory", "positions": 147, "ts": "2026-10-25T08:42:12Z"}
+{"accepted": false, "child": 0.2847, "delta": 0.0, "depth": 3, "escaping": true, "generation": 17, "level": 4, "population": 22, "record": 0.2847, "shortlist": 0.4375, "sigma": 0.5011, "ts": "2026-10-25T08:42:51Z"}
+{"accepted": false, "child": 0.2847, "delta": 0.0, "depth": 3, "escaping": true, "generation": 18, "level": 4, "population": 22, "record": 0.2847, "shortlist": 0.4375, "sigma": 0.5011, "ts": "2026-10-25T08:43:06Z"}
+{"booked": 30, "games": 4, "kind": "memory", "positions": 174, "ts": "2026-10-25T08:43:06Z"}

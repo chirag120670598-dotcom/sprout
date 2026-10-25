@@ -121,6 +121,7 @@ def main() -> int:
             fails.append(f"honesty copy missing: {label}")
 
     # 7. the engine must be byte-identical to what was frozen
+    crlf: list[str] = []
     if HASHES.exists():
         for line in HASHES.read_text(encoding="utf-8").splitlines():
             if not line.strip():
@@ -130,9 +131,20 @@ def main() -> int:
             if not path.exists():
                 fails.append(f"frozen file missing: {name}")
                 continue
-            actual = hashlib.sha256(path.read_bytes()).hexdigest()
+            data = path.read_bytes()
+            actual = hashlib.sha256(data).hexdigest()
             if actual != digest:
                 fails.append(f"the engine was edited by hand: {name}")
+                if b"\r\n" in data:
+                    crlf.append(name)
+
+    if len(crlf) > 1:
+        # Ten files "edited by hand" at once is not ten edits; it is a checkout
+        # that rewrote every line ending. Say so, because a maintainer reading
+        # ten accusations of hand-editing will look for a culprit that is not there.
+        fails.append(
+            f"{len(crlf)} engine files differ and all of them contain CRLF -- "
+            "this is a line-ending problem, not an edit (.gitattributes pins eol=lf)")
 
     return report(text=text)
 

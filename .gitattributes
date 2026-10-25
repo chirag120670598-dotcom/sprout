@@ -1,0 +1,7 @@
+# frozen.sha256 pins the engine by the SHA-256 of its bytes. Bytes only mean the
+# same thing in every checkout if the checkout writes the same ones, so line
+# endings are pinned here instead of left to core.autocrlf on each machine.
+# Windows checked the ten engine files out as CRLF and every one of them hashed
+# differently, which read as "the engine was edited by hand" ten times over.
+* text=auto eol=lf
+*.sha256 text eol=lf

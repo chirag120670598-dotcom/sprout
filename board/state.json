@@ -40,12 +40,12 @@
     "exam": 0.6944444444444444,
     "at_level": 10
   },
-  "generations": 1362,
+  "generations": 1554,
   "accepted": 9,
-  "rejected": 1353,
-  "stall": 979,
+  "rejected": 1545,
+  "stall": 1171,
   "born": "2026-10-24T16:44:49Z",
-  "updated": "2026-10-27T05:28:27Z",
+  "updated": "2026-10-27T13:15:12Z",
   "history": [
     {
       "level": 1,
@@ -160,7 +160,7 @@
   ],
   "memory": {
     "positions": 723,
-    "games": 241,
-    "learned": 2839
+    "games": 273,
+    "learned": 3225
   }
 }

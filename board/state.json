@@ -1,9 +1,9 @@
 {
   "version": 1,
   "name": "sprout",
-  "level": 11,
+  "level": 13,
   "genome": {
-    "program": "(sub (mul 0.888 (add (sub my1 (mul op3 1.144)) mob)) op2)",
+    "program": "(sub (mul 0.888 (add (sub my1 (mul (sub (mul (sub my2 mob) -0.015) (sub one op3)) 1.144)) mob)) op2)",
     "weights": [
       0.0,
       0.0,
@@ -12,15 +12,15 @@
       0.0
     ],
     "depth": 3,
-    "sigma": 0.9824,
+    "sigma": 0.9045,
     "population": 22,
-    "margin": 0.0369
+    "margin": 0.0443
   },
   "exam": {
-    "score": 0.7361111111111112,
-    "wins": 53,
+    "score": 0.8194444444444444,
+    "wins": 59,
     "draws": 0,
-    "losses": 19,
+    "losses": 13,
     "games": 72,
     "seed": 104729,
     "opponents": [
@@ -29,23 +29,23 @@
       "hand-4"
     ],
     "sanity": {
-      "random": 0.958,
+      "random": 1.0,
       "first": 1.0,
       "centre": 1.0
     }
   },
-  "record": 0.7361111111111112,
+  "record": 0.8194444444444444,
   "style": 100.0,
   "peak": {
-    "exam": 0.7361111111111112,
-    "at_level": 11
+    "exam": 0.8194444444444444,
+    "at_level": 13
   },
-  "generations": 2898,
-  "accepted": 10,
-  "rejected": 2888,
-  "stall": 730,
+  "generations": 3090,
+  "accepted": 12,
+  "rejected": 3078,
+  "stall": 109,
   "born": "2026-10-24T16:44:49Z",
-  "updated": "2026-10-29T13:40:08Z",
+  "updated": "2026-10-30T00:00:40Z",
   "history": [
     {
       "level": 1,
@@ -167,11 +167,33 @@
         "hand-3",
         "hand-4"
       ]
+    },
+    {
+      "level": 12,
+      "exam": 0.7778,
+      "style": 100.0,
+      "generation": 2908,
+      "opponents": [
+        "hand-2",
+        "hand-3",
+        "hand-4"
+      ]
+    },
+    {
+      "level": 13,
+      "exam": 0.8194,
+      "style": 100.0,
+      "generation": 2981,
+      "opponents": [
+        "hand-2",
+        "hand-3",
+        "hand-4"
+      ]
     }
   ],
   "memory": {
     "positions": 1072,
-    "games": 496,
-    "learned": 5928
+    "games": 528,
+    "learned": 6336
   }
 }
